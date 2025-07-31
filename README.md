@@ -22,10 +22,18 @@ If your country dont in this list, then open Issue with this situation and I cre
 
 ## Installation
 
-Use `main.sh` for installing module.
+Use `main.sh` for installing module in this repository.
 
 ```bash
-bash <(curl https://raw.githubusercontent.com/Yarik1333Roky/pterodactyl-region/main/main.sh)
+git clone https://github.com/Yarik1333Roky/pterodactyl-region.git
+cd pterodactyl-region
+bash ./main.sh
+```
+
+or
+
+```bash
+git clone https://github.com/Yarik1333Roky/pterodactyl-region.git; cd pterodactyl-region; bash ./main.sh
 ```
 
 Run this bash script **only** from *root permissions*.
