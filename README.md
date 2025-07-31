@@ -1,17 +1,17 @@
 # Home page of «pterodactyl-region»
 
-![Full Screen showcase](/pictures/full_screen.png)
-![Logo Image](/pictures/regions_show.png)
+![Full Screen showcase](https://github.com/Yarik1333Roky/pterodactyl-region/blob/ea810ec1420f95a27790dc907043a9ebe643ac1f/pictures/full_screen.png?raw=true)
+![Logo Image](https://github.com/Yarik1333Roky/pterodactyl-region/blob/ea810ec1420f95a27790dc907043a9ebe643ac1f/pictures/regions_show.png?raw=true)
 pterodactyl-region is a *free to downloading module*. His target its show you where your server is located right now. 
 <br/> Working with API of https://ipapi.is.
 
-## Available countrys
+## Available countries
 
 Here are only the most popular countries on the Internet, namely:
 
-| Continent         | Countrys in module                                                                                                                                                                                         |
+| Continent         | Countries in module                                                                                                                                                                                         |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philipines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong Kong                                                               |
+| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong Kong                                                               |
 | **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom |
 | **North America** | Canada, United States of America                                                                                                                                                                           |
 | **South America** | Argentina, Brazil, Colombia, Chile                                                                                                                                                                         |
