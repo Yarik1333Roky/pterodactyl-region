@@ -125,8 +125,8 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                                     url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
                                 } else {
                                     setIpInfo({
-                                        city: "Unknown",
-                                        country_name: "DNS Error",
+                                        city: "Error",
+                                        country_name: "DNS API",
                                         country_code: "N/A",
                                     });
                                 }
@@ -142,8 +142,8 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                                 url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
                             } else {
                                 setIpInfo({
-                                    city: "Unknown",
-                                    country_name: "DNS Error",
+                                    city: "Error",
+                                    country_name: "DNS API",
                                     country_code: "N/A",
                                 });
                             }
@@ -160,17 +160,26 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                         });
                     } else {
                         setIpInfo({
-                            city: "Unknown",
-                            country_name: "IP API Error",
+                            city: "Error",
+                            country_name: "IP API",
                             country_code: "N/A",
                         });
                     }
-                } catch (error) {
-                    setIpInfo({
-                        city: "Unknown",
-                        country_name: "Parse Error",
-                        country_code: "N/A",
-                    });
+                } catch (error: any) {
+                    if (error.code === "ECONNABORTED") {
+                        setIpInfo({
+                            city: "Error",
+                            country_name: "Internet Connect",
+                            country_code: "N/A",
+                        });
+                    } else {
+                        setIpInfo({
+                            city: "Error",
+                            country_name: "Unknown",
+                            country_code: "N/A",
+                        });
+                    }
+                    
                 }
             };
 
