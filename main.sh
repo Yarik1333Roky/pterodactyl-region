@@ -7,8 +7,8 @@ fi
 
 echo ""
 echo "pterodactyl-region"
-echo ""
-echo "version: 1.0"
+echo "Show where your server located across the world."
+echo "version: 1.0.0"
 echo ""
 echo "Copyright (c) 2025 exeyarikus"
 echo "This program is free software; you can redistribute it and/or modify it."
