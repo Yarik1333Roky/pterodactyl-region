@@ -119,8 +119,8 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                             if (ip_matcher.test(my_hostname)) {
                                 url_request += `?q=${my_hostname}`
                             } else {
-                                const response_from_dns = await axios.get(`https://dns.google/resolve?name=${my_hostname}`);
-                                const jsonData_from_dns = response_from_dns.data;
+                                const responce_from_dns = await axios.get(`https://dns.google/resolve?name=${my_hostname}`);
+                                const jsonData_from_dns = responce_from_dns.data;
                                 if (jsonData_from_dns && jsonData_from_dns.Status === 0) {
                                     url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
                                 } else {
@@ -136,8 +136,8 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                         if (ip_matcher.test(ip)) {
                             url_request += `?q=${ip}`;
                         } else {
-                            const response_from_dns = await axios.get(`https://dns.google/resolve?name=${ip}`);
-                            const jsonData_from_dns = response_from_dns.data;
+                            const responce_from_dns = await axios.get(`https://dns.google/resolve?name=${ip}`);
+                            const jsonData_from_dns = responce_from_dns.data;
                             if (jsonData_from_dns && jsonData_from_dns.Status === 0) {
                                 url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
                             } else {
@@ -149,8 +149,8 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                             }
                         }
                     }
-                    const response = await axios.get(url_request);
-                    const jsonData = response.data;
+                    const responce = await axios.get(url_request);
+                    const jsonData = responce.data;
 
                     if (jsonData && jsonData.ip) {
                         setIpInfo({
