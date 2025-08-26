@@ -18,7 +18,6 @@ import useWebsocketEvent from '@/plugins/useWebsocketEvent';
 import classNames from 'classnames';
 import { capitalize } from '@/lib/strings';
 import axios from 'axios';
-import { hostname } from 'os';
 
 type Stats = Record<'memory' | 'cpu' | 'disk' | 'uptime' | 'rx' | 'tx', number>;
 
@@ -108,85 +107,55 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
     });
 
     useEffect(() => {
-        if (serverIp) {
-            const fetchIpInfo = async (ip: string): Promise<void> => {
-                try {
-                    var ip_matcher = /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/;
-                    let url_request = 'https://api.ipapi.is/';
-                    if (isLocalIPAddress(ip)) {
-                        const my_hostname = hostname();
-                        if (!isLocalIPAddress(my_hostname)) {
-                            if (ip_matcher.test(my_hostname)) {
-                                url_request += `?q=${my_hostname}`
-                            } else {
-                                const responce_from_dns = await axios.get(`https://dns.google/resolve?name=${my_hostname}`);
-                                const jsonData_from_dns = responce_from_dns.data;
-                                if (jsonData_from_dns && jsonData_from_dns.Status === 0) {
-                                    url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
-                                } else {
-                                    setIpInfo({
-                                        city: "Error",
-                                        country_name: "DNS API",
-                                        country_code: "N/A",
-                                    });
-                                }
-                            }
-                        }
-                    } else {
-                        if (ip_matcher.test(ip)) {
-                            url_request += `?q=${ip}`;
-                        } else {
-                            const responce_from_dns = await axios.get(`https://dns.google/resolve?name=${ip}`);
-                            const jsonData_from_dns = responce_from_dns.data;
-                            if (jsonData_from_dns && jsonData_from_dns.Status === 0) {
-                                url_request += `?q=${jsonData_from_dns.Answer[0].data}`;
-                            } else {
-                                setIpInfo({
-                                    city: "Error",
-                                    country_name: "DNS API",
-                                    country_code: "N/A",
-                                });
-                            }
-                        }
-                    }
-                    const responce = await axios.get(url_request);
-                    const jsonData = responce.data;
-
-                    if (jsonData && jsonData.ip) {
-                        setIpInfo({
-                            city: jsonData.location.city,
-                            country_name: jsonData.location.country,
-                            country_code: jsonData.location.country_code,
-                        });
-                    } else {
-                        setIpInfo({
-                            city: "Error",
-                            country_name: "IP API",
-                            country_code: "N/A",
-                        });
-                    }
-                } catch (error: any) {
-                    if (error.code === "ECONNABORTED") {
-                        setIpInfo({
-                            city: "Error",
-                            country_name: "Internet Connect",
-                            country_code: "N/A",
-                        });
-                    } else {
-                        setIpInfo({
-                            city: "Error",
-                            country_name: "Unknown",
-                            country_code: "N/A",
-                        });
-                    }
-                    
-                }
-            };
-
-            fetchIpInfo(serverIp);
-        } else {
+        if (!serverIp) {
             setIpInfo(null);
+            return;
         }
+
+        const fetchIpInfo = async (ipOrHost: string) => {
+            try {
+                let queryIp = ipOrHost;
+                const ipv4Regex = /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/;
+
+                // Resolve hostname via Cloudflare DoH if needed
+                if (!ipv4Regex.test(ipOrHost)) {
+                    const dnsRes = await axios.get(
+                        `https://cloudflare-dns.com/dns-query?name=${ipOrHost}&type=A`,
+                        { headers: { Accept: 'application/dns-json' } }
+                    );
+                    const answer = dnsRes.data?.Answer?.find((a: any) => a.type === 1);
+                    if (answer) queryIp = answer.data;
+                }
+
+                // Local/private IP handling
+                if (isLocalIPAddress(queryIp)) {
+                    setIpInfo({
+                        city: 'Local',
+                        country_name: 'Private Network',
+                        country_code: 'LAN',
+                    });
+                    return;
+                }
+
+                // Fetch geolocation from ipwhois.io
+                const geoRes = await axios.get(`https://ipwhois.app/json/${queryIp}`);
+                const data = geoRes.data;
+
+                setIpInfo({
+                    city: data.city || 'Unknown',
+                    country_name: data.country || 'Unknown',
+                    country_code: data.country_code || 'N/A',
+                });
+            } catch (error: any) {
+                setIpInfo({
+                    city: 'Error',
+                    country_name: error.message || 'Unknown',
+                    country_code: 'N/A',
+                });
+            }
+        };
+
+        fetchIpInfo(serverIp);
     }, [serverIp]);
 
     useEffect(() => {
