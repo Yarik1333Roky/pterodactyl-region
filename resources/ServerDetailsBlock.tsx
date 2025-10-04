@@ -67,6 +67,7 @@ function isLocalIPAddress(ipAddress: string) {
     /^172\.(1[6-9]|2\d|3[0-1])\./,
     /^::1$/,
     /^fe80:/,
+    /^0\./
   ];
 
   for (const pattern of localIPPatterns) {
