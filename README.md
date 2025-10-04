@@ -11,8 +11,8 @@ Here are only the most popular countries on the Internet, namely:
 
 | Continent         | Countries in module                                                                                                                                                                                         |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong Kong                                                               |
-| **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom |
+| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong, Kazakhstan, Indonesia Kong                                                               |
+| **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom, Türkiye, Serbia, Latvia, Lithuania, Island, Estonia, Belarus |
 | **North America** | Canada, United States of America                                                                                                                                                                           |
 | **South America** | Argentina, Brazil, Colombia, Chile                                                                                                                                                                         |
 | **Africa**        | Egypt, Kenya, Morocco, Nigeria, South Africa                                                                                                                                                               |
@@ -20,6 +20,7 @@ Here are only the most popular countries on the Internet, namely:
 
 If your country dont in this list, then open Issue with this situation and I create new version of module for you.
 
+Also, you can watch on interactive map all countrys that placed here -> https://exeyarikus.info/pterodactyl-region-map
 ## Installation
 
 Use `main.sh` for installing module in this repository.
