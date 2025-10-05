@@ -61,6 +61,18 @@ import ID from '@/assets/regions/ID.svg';
 import EE from '@/assets/regions/EE.svg';
 import BY from '@/assets/regions/BY.svg';
 import ZA from '@/assets/regions/ZA.svg';
+import GR from '@/assets/regions/GR.svg';
+import HR from '@/assets/regions/HR.svg';
+import HU from '@/assets/regions/HU.svg';
+import KY from '@/assets/regions/KY.svg';
+import MD from '@/assets/regions/MD.svg';
+import MN from '@/assets/regions/MN.svg';
+import MX from '@/assets/regions/MX.svg';
+import SI from '@/assets/regions/SI.svg';
+import SK from '@/assets/regions/SK.svg';
+import TJ from '@/assets/regions/TJ.svg';
+import UZ from '@/assets/regions/UZ.svg';
+
 
 interface StatBlockProps {
     title: string;
@@ -81,7 +93,9 @@ const countryCodeToSvg: {[key: string]: any} = {
     SA: SA, SE: SE, SG: SG, TH: TH, TW: TW,
     UA: UA, US: US, VN: VN, ZA: ZA, TR: TR,
     RS: RS, LV: LV, LT: LT, KZ: KZ, IS: IS,
-    ID: ID, EE: EE, BY: BY
+    ID: ID, EE: EE, BY: BY, GR: GR, HR: HR,
+    HU: HU, KY: KY, MD: MD, MN: MN, MX: MX,
+    SI: SI, SK: SK, TJ: TJ, UZ: UZ
 };
 
 export default ({ title, copyOnClick, icon_name, color, children }: StatBlockProps) => {
