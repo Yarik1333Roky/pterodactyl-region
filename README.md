@@ -23,18 +23,10 @@ If your country dont in this list, then open Issue with this situation and I cre
 Also, you can watch on interactive map all countrys that placed here -> https://exeyarikus.info/pterodactyl-region/map
 ## Installation
 
-Use `main.sh` for installing module in this repository.
+Use ***my link*** for installing module in your pterodactyl environment.
 
 ```bash
-git clone https://github.com/Yarik1333Roky/pterodactyl-region.git
-cd pterodactyl-region
-bash ./main.sh
-```
-
-or
-
-```bash
-git clone https://github.com/Yarik1333Roky/pterodactyl-region.git; cd pterodactyl-region; bash ./main.sh
+bash <(curl https://exeyarikus.info/pterodactyl-region/install)
 ```
 
 Run this bash script **only** from *root permissions*.
