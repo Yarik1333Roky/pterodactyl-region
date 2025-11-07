@@ -6,9 +6,16 @@ if [[ "$EUID" -ne 0 ]]; then
 fi
 
 echo ""
-echo "pterodactyl-region"
+echo """
+           __                      __           __        __                      _           
+    ____  / /____  _________  ____/ /___ ______/ /___  __/ /     ________  ____ _(_)___  ____ 
+   / __ \/ __/ _ \/ ___/ __ \/ __  / __ `/ ___/ __/ / / / /_____/ ___/ _ \/ __ `/ / __ \/ __ \
+  / /_/ / /_/  __/ /  / /_/ / /_/ / /_/ / /__/ /_/ /_/ / /_____/ /  /  __/ /_/ / / /_/ / / / /
+ / .___/\__/\___/_/   \____/\__,_/\__,_/\___/\__/\__, /_/     /_/   \___/\__, /_/\____/_/ /_/ 
+/_/                                             /____/                  /____/                
+"""
 echo "Show where your server located across the world."
-echo "version: 1.0.0"
+echo "version: 2.0"
 echo ""
 echo "Copyright (c) 2025 exeyarikus"
 echo "This program is free software; you can redistribute it and/or modify it."
