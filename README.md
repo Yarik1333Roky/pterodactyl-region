@@ -21,6 +21,13 @@ Here are only the most popular countries on the Internet, namely:
 If your country dont in this list, then open Issue with this situation and I create new version of module for you.
 
 Also, you can watch on interactive map all countrys that placed here -> https://exeyarikus.info/pterodactyl-region/map
+
+## Full Customization
+![Admin Settings](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/pictures/admin_settings.png?raw=true)
+Available *full customization* connects to API. Use:
+- DNS Google, DNS Cloudflare
+- ipapi.is, ipapi.co, ipwho.is, geoiplookup.io
+
 ## Installation
 
 Use ***my link*** for installing module in your pterodactyl environment.
