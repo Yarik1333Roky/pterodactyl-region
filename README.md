@@ -3,7 +3,6 @@
 ![Full Screen showcase](https://github.com/Yarik1333Roky/pterodactyl-region/blob/ea810ec1420f95a27790dc907043a9ebe643ac1f/pictures/full_screen.png?raw=true)
 ![Logo Image](https://github.com/Yarik1333Roky/pterodactyl-region/blob/ea810ec1420f95a27790dc907043a9ebe643ac1f/pictures/regions_show.png?raw=true)
 pterodactyl-region is a *free to downloading module*. His target its show you where your server is located right now. 
-<br/> Working with API of https://ipapi.is.
 
 ## Available countries
 
