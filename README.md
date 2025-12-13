@@ -32,7 +32,7 @@ Available *full customization* connects to API. Use:
 Use ***my link*** for installing module in your pterodactyl environment.
 
 ```bash
-bash <(curl https://exeyarikus.info/pterodactyl-region/install)
+bash <(curl -s https://exeyarikus.info/pterodactyl-region/install)
 ```
 
 Run this bash script **only** from *root permissions*.
