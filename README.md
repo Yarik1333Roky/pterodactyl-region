@@ -1,4 +1,4 @@
-#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md)
+#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md) | [Nederlands](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_NL.md)
 
 # Home page of «pterodactyl-region»
 
@@ -8,7 +8,7 @@ pterodactyl-region is a *free to downloading module*. His target its show you wh
 
 ## Available countries
 
-Here are only the most popular countries on the Internet, namely:
+Here is a list of countries that are currently supported by this module:
 
 | Continent         | Countries in module |
 |-------------------|---------------------|
