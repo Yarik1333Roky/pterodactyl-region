@@ -18,7 +18,6 @@ import useWebsocketEvent from '@/plugins/useWebsocketEvent';
 import classNames from 'classnames';
 import { capitalize } from '@/lib/strings';
 import axios from 'axios';
-import { hostname } from 'os';
 import { useStoreState } from 'easy-peasy';
 import ipwho_is from './api-ip/ipwho.is';
 import geoiplookup_io from './api-ip/geoiplookup.io';
@@ -142,7 +141,7 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
                     var ip_matcher = /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/;
                     let url_request = IPAPIConnects[ip_api].getAPIconnect();
                     if (isLocalIPAddress(ip)) {
-                        const my_hostname = hostname();
+                        const my_hostname = window.location.hostname;
                         if (!isLocalIPAddress(my_hostname)) {
                             if (ip_matcher.test(my_hostname)) {
                                 url_request += IPAPIConnects[ip_api].addHostname(my_hostname);
@@ -235,7 +234,7 @@ const ServerDetailsBlock = ({ className }: { className?: string }) => {
 
     return (
         <div className={classNames('grid grid-cols-6 gap-2 md:gap-4', className)}>
-            <StatBlock icon={faWifi} title={'Address'} copyOnClick={allocation}>
+            <StatBlock icon={faWifi} title={'Address'}>
                 <a href={address} target='_blank'>{allocation}</a>
             </StatBlock>
             <StatBlock

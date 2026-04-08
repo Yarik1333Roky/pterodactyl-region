@@ -10,12 +10,12 @@ Here are only the most popular countries on the Internet, namely:
 
 | Continent         | Countries in module                                                                                                                                                                                         |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong, Kazakhstan, Indonesia Kong, Uzbekistan, Tajikistan, Mongolia, Kyrgyzstan, Turkmenistan                                                               |
-| **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom, Türkiye, Serbia, Latvia, Lithuania, Island, Estonia, Belarus, Slovakia, Slovenia, Moldova, Hungary, Croatia, Greece, Luxembourg, Montenegro, Bosnia and Herzegovina, Albania, North Macedonia, Georgia, Armenia, Azerbaijan, Cyprus |
-| **North America** | Canada, United States of America, Mexico, Costa Rica                                                                                                                                                                           |
-| **South America** | Argentina, Brazil, Colombia, Chile, Panama, Peru, Ecuador                                                                                                                                                                         |
-| **Africa**        | Egypt, Kenya, Morocco, Nigeria, South Africa                                                                                                                                                               |
-| **Oceania**       | Australia, New Zealand                                                                                                                                                                                     |
+| **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong, Kazakhstan, Indonesia Kong, Uzbekistan, Tajikistan, Mongolia, Kyrgyzstan, Turkmenistan |
+| **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom, Türkiye, Serbia, Latvia, Lithuania, Island, Estonia, Belarus, Slovakia, Slovenia, Moldova, Hungary, Croatia, Greece, Luxembourg, Montenegro, Bosnia and Herzegovina, Albania, North Macedonia, Georgia, Armenia, Azerbaijan, Cyprus, Kosovo |
+| **North America** | Canada, United States of America, Mexico, Costa Rica |
+| **South America** | Argentina, Brazil, Colombia, Chile, Panama, Peru, Ecuador, Venezuela, Guyana, Suriname, Bolivia, Paraguay, Uruguay |
+| **Africa**        | Egypt, Kenya, Morocco, Nigeria, South Africa |
+| **Oceania**       | Australia, New Zealand |
 
 If your country dont in this list, then open Issue with this situation and I create new version of module for you.
 
