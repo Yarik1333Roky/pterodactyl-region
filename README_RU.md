@@ -1,4 +1,4 @@
-#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md)
+#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md) | [Nederlands](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_NL.md)
 
 # Главная страница «pterodactyl-region»
 
@@ -9,7 +9,7 @@
 
 ## Доступные страны
 
-В модуле представлены наиболее популярные страны Интернета:
+Вот список стран, которые в настоящее время поддерживаются этим модулем:
 
 | Континент            | Страны в модуле |
 | ------------------- | -------------- |
@@ -54,3 +54,4 @@ bash <(curl -sL https://exeyarikus.info/pterodactyl-region/install)
 
 * в [Discord-сервере](https://dsc.gg/mrlg),
 * на моём официальном [сайте](https://exeyarikus.info)
+
