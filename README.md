@@ -1,3 +1,5 @@
+#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md)
+
 # Home page of «pterodactyl-region»
 
 ![Full Screen showcase](https://github.com/Yarik1333Roky/pterodactyl-region/blob/ea810ec1420f95a27790dc907043a9ebe643ac1f/pictures/full_screen.png?raw=true)
@@ -8,8 +10,8 @@ pterodactyl-region is a *free to downloading module*. His target its show you wh
 
 Here are only the most popular countries on the Internet, namely:
 
-| Continent         | Countries in module                                                                                                                                                                                         |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Continent         | Countries in module |
+|-------------------|---------------------|
 | **Asia**          | United Arab Emirates, China, Israel, India, japan, South Korea, Malaysia, Philippines, Qatar, Singapore, Thailand, Taiwan, Vietnam, Hong, Kazakhstan, Indonesia Kong, Uzbekistan, Tajikistan, Mongolia, Kyrgyzstan, Turkmenistan |
 | **Europe**        | Austria, Belgium, Bulgaria, Switzerland, Czech Republic, Germany, Denmark, Spain, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Romania, Russia, Sweden, Ukraine, United Kingdom, Türkiye, Serbia, Latvia, Lithuania, Island, Estonia, Belarus, Slovakia, Slovenia, Moldova, Hungary, Croatia, Greece, Luxembourg, Montenegro, Bosnia and Herzegovina, Albania, North Macedonia, Georgia, Armenia, Azerbaijan, Cyprus, Kosovo |
 | **North America** | Canada, United States of America, Mexico, Costa Rica |
@@ -32,7 +34,7 @@ Available *full customization* connects to API. Use:
 Use ***my link*** for installing module in your pterodactyl environment.
 
 ```bash
-bash <(curl -s https://exeyarikus.info/pterodactyl-region/install)
+bash <(curl -sL https://exeyarikus.info/pterodactyl-region/install)
 ```
 
 Run this bash script **only** from *root permissions*.
