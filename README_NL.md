@@ -1,4 +1,4 @@
-#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md) | [Nederlands] (LINK)
+#### [English](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README.md) | [Русский](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_RU.md) | [Nederlands](https://github.com/Yarik1333Roky/pterodactyl-region/blob/main/README_NL.md) 
 
 # Home pagina van «pterodactyl-region»
 
