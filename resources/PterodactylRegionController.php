@@ -40,8 +40,8 @@ class PterodactylRegionController extends Controller
         }
         
         return $this->view->make('admin.settings.pterodactyl-region', [
-            'version' => Arr::get($json_data, 'version') ?? '2.0',
-            'my_version' => '2.0',
+            'version' => Arr::get($json_data, 'version') ?? '2.1',
+            'my_version' => '2.1',
             'discord' => Arr::get($json_data, 'discord') ?? 'https://dsc.gg/mrlg',
         ]);
     }
